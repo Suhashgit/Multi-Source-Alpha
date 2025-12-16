@@ -9,6 +9,9 @@ __pycache__/
 venv/
 env/
 
+# Environment variables (IMPORTANT)
+.env
+
 # Data (do not commit raw data)
 data/
 *.csv
