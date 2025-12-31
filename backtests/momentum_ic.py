@@ -54,9 +54,9 @@ def summarize_ic(ic_series: pd.Series) -> dict:
 if __name__ == "__main__":
     combined = combine_momentum_and_returns()
     mom = combined["mom"]
-    fwd21 = combined["fwd_21d"]
+    fwd63 = combined["fwd_63d"]
 
-    ic_series = compute_ic_series(mom, fwd21)
+    ic_series = compute_ic_series(mom, fwd63)
     summary = summarize_ic(ic_series)
 
     print("IC Summary:")
